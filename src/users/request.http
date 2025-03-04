@@ -1,0 +1,35 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"Partsh.op@we.com",
+    "password":"Abc@12345678"
+}
+
+### SingIn a new user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email":"Partsh.op@we.com",
+    "password":"Abc@12345678"
+}
+
+
+### Get User Info By Id
+GET http://localhost:3000/auth/2
+
+### Get User Info By Query
+GET http://localhost:3000/auth?email=abc@test.com
+
+### Update User Info
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email":"parth.bhavsar@ss.com"
+}
+
+### Delete User Info By Id
+Delete http://localhost:3000/auth/1
